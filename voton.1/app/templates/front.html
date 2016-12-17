@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+    <div class="container-background container-fluid">
+            <form id="voteform" method="POST" enctype="multipart/form-data">
+                <br><br><br><br>
+                <div class="row img-rounded qhead">
+                    <h3 class="text-center"><b>{{question}}</b></h3>
+                    <br>
+                </div>
+                <div class="img-rounded row limit center-block">
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <div class="option">
+                            <label>
+                                <input type="radio" class="radio" name="choice" value="first" />
+                                <img class="img-responsive choice img-rounded grow" src={{src1}}>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <label>
+                                <input type="radio" class="radio" name="choice" value="second" />
+                                <img class="img-responsive choice img-rounded grow" src={{src2}}>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row img-rounded ">
+                    <h4 class="text-center">Image vote: {{vote1}}<span>    </span>Image vote: {{vote2}}</h4>
+                </div>
+                <input type="submit" class="btn btn-primary center-block" value="Submit your vote!">
+                <br>
+                <input type="reset" class="btn btn-default center-block" value="Clear your choice">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </form>
+        </div>
+{% endblock %}

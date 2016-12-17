@@ -1,0 +1,145 @@
+p{
+    font-family: arial;
+}
+
+body{
+    background:#4CAF50;
+}
+.container-background{
+    background:#4CAF50;
+}
+
+h3{
+    font-size: 2.75em;
+}
+h4{
+    font-family: 'Segoe UI';
+    color:#43a047;
+}
+.limit {
+    max-width: 2200px;
+}
+.grow {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+.qhead{
+    background:#A5D6A7;
+    font-family: century gothic;
+    color:#388E3C;
+    opacity:.88;
+}
+.radio {
+    opacity:0;
+}
+.option{
+    
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 40%;
+    left: 40%;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+.choice .img-responsive{
+    display:block;
+    max-width: none;
+    margin:0 auto;
+    transition: 0.5s;
+}
+a:active {
+    opacity:.8;
+}
+
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:5px solid #F8B801;
+  opacity: .8;
+  
+}
+.question {
+    background:white;
+    font-family: Trebuchet MS, 'Futura', Arial;
+    color:#43a047;
+}
+.question-head {
+    background: #43a047;
+    color: white
+}
+
+.grow:hover{
+    transform:scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    -moz-transform: scale(1.02, 1.02);
+    -ms-transform: scale(1.02, 1.02);
+    -o-transform: scale(1.02, 1.02);
+}
+.fat {
+    padding: 0;
+}
+
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(232, 245, 233, 1);
+    font-family: century gothic;
+    font-size: 180%;
+    font-weight: bold
+}
+#custom-bootstrap-menu.navbar-default {
+    background-color: rgba(56, 142, 60, 1);
+    border-width: 0px;
+    border-radius: 0px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(232, 245, 233, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(200, 230, 201, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(232, 245, 233, 1);
+    background-color: rgba(67, 160, 71, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #43a047;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #43a047;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #43a047;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #388e3c;
+}
+
+.upload-drop-zone {
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}

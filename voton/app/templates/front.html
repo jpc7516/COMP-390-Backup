@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block content %}
+    <div class="container-background container-fluid">
+        <div class="row ">
+            <br><br>
+            <img class="img-responsive center-block" src="../static/voton_banner.png">
+            <br><br>
+        </div>
+            <form id="voteform" method="POST" enctype="multipart/form-data">
+                <br><br><br><br>
+                <div class="row img-rounded qhead">
+                    <h3 class="text-center"><b>{{question}}</b></h3>
+                    <br>
+                </div>
+                <div class="img-rounded row limit center-block">
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <div class="option">
+                            <label>
+                                <input type="radio" class="radio" name="choice" value="first" />
+                                <img class="img-responsive choice img-rounded grow" src={{src1}}>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <label>
+                                <input type="radio" class="radio" name="choice" value="second" />
+                                <img class="img-responsive choice img-rounded grow" src={{src2}}>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row img-rounded ">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <div class="well"><h4 class="text-center"><span class="glyphicon glyphicon-stats"></span> Votes: {{vote1}}</h4></div>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="submit" class="btn btn-primary center-block" value="Submit your vote!">
+                        <br>
+                        <input type="reset" class="btn btn-default center-block" value="Clear your choice">
+                    </div>
+                    <div class="col-md-4">
+                        <div class="well"><h4 class="text-center"><span class="glyphicon glyphicon-stats"></span> Votes: {{vote2}}</h4></div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                <br><br><br><br>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <label for="comment">Comments:</label>
+                        <textarea name="comment" cols="70" rows="3" placeholder="Enter any comments here." class="form-control center-block"></textarea>
+                        <br>
+                        <br>
+                        <div class="well">User1234<br>Wow, this website is so cool!!!</div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </form>
+        </div>
+{% endblock %}

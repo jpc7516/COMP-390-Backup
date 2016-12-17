@@ -1,0 +1,2 @@
+#!/bin/bash
+voton/flask/bin/python voton/run.py
